@@ -27,8 +27,6 @@ dotenv.config();
   // Commands deploy
   const commandsJson = [];
   Commands.forEach((v, k) => {
-    console.log(v.description);
-
     const data = new SlashCommandBuilder()
       .setName(k)
       .setDescription(v.description)

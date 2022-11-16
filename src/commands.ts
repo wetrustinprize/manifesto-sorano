@@ -17,8 +17,6 @@ for (const file of commandFiles) {
   const command = require(filePath);
   const commandName = filePath.replace(/^.*[\\\/]/, "").replace(".ts", "");
 
-  console.log({ commandName });
-
   if (command.default as Command) {
     Commands.set(commandName, command.default as Command);
   }
