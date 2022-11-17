@@ -1,6 +1,6 @@
 import * as prompts from "prompts";
 import * as dotenv from "dotenv";
-import Commands from "./commands";
+import Commands from "../commands";
 import { REST, Routes, SlashCommandBuilder } from "discord.js";
 dotenv.config();
 
